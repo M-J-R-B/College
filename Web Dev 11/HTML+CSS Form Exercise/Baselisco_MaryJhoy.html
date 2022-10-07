@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Web Form</title>
+</head>
+<body>
+    <form action="mailto:mbaselisco@gmail.com" method="POST" enctype="text/plain">
+        <fieldset class="f-one">
+            <legend>Customer Information</legend>
+                <table>
+                    <tr>
+                        <td><label>Name*</label></td>
+                        <td><input class="one" type="text" id="name" name="NAME" placeholder="Enter your name here" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Street address</label></td>
+                        <td><input id="address" class="one" type="text" name="ADDRESS" placeholder="P. Sanchez"></td>
+                    </tr>
+                    <tr>
+                        <td><label>City</label></td>
+                        <td><input id="city" class="one" type="text" name="CITY" placeholder="Mandaue"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Barangay</label></td>
+                        <td><input id="state" class="one" type="text" name="STATE" placeholder="Lilo-an"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Postal code</label></td>
+                        <td><input id="postalcode" class="one" type="text" name="POSTAL CODE" placeholder="6014"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Phone number</label></td>
+                        <td><input id="phonenumber" class="one" type="tel" name="PHONE NUMBER" placeholder="0912 3456 789"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email*</label></td>
+                        <td><input id="email" class="one" type="email" name="EMAIL" placeholder="nice1baby@gmail.com" required></td>
+                    </tr>
+                    <tr>
+                        <td class="top-left"><label>Where did you hear about us?</label><br>(select all that apply)</td>
+                        <td><div class="refer">                                
+                            <label><input id="refer" class="hidden" type="checkbox" name="REFERRAL" value="Internet">Internet</label><br>                                
+                            <label><input id="refer" class="hidden" type="checkbox" name="REFERRAL" value="Magazine">Magazine</label><br>                                
+                            <label><input id="refer" class="hidden" type="checkbox" name="REFERRAL" value="Newspaper">Newspaper</label><br>                                
+                            <label><input id="refer" class="hidden" type="checkbox" name="REFERRAL" value="WordOfMouth">Word of Mouth</label><br>                               
+                            <label><input id="refer" class="hidden" type="checkbox" name="REFERRAL" value="Other">Other</label><br>                            
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>What's your favorite dish?</label></td>
+                        <td><input id="favoritedish" class="one" type="text" name="FavoriteDish" placeholder="KFC Chicken"></td>
+                    </tr>
+                    <tr>
+                        <td class="dine-out"><label>How many times do you dine out per month?</label></td>
+                        <td><input id="dining" class="one" type="number" name="DineOutFrequency"></td>
+                    </tr> 
+                </table>
+                
+                <label><input type="checkbox" name="EmailLead" value="AddToEmailList">Add me to your mailing list for great coupons and specials!</label>
+        </fieldset>
+
+        <fieldset class="f-two">
+            <legend>Share Your Experience at Jollibee</legend>
+            <table>
+                <tr>
+                    <td><label>Date of Visit</label></td>
+                    <td><input id="VisitDate" class="two" type="date" name="VisitDate"></td>
+                </tr>
+                <tr>
+                    <td><label>Order type</label></td>
+                    <td><select class="two" name="OrderType">
+                            <option>Dine in</option>
+                            <option>Dine out</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="top-left">Was your service friendly?</td>
+                    <td><fieldset class="two">
+                            <label>Yes<input type="radio" name="FriendlyService?" value="Yes"></label>
+                            <label>No<input type="radio" name="FriendlyService?" value="No"></label>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="top-left">Was your order correct?</td>
+                    <td><fieldset class="two">
+                            <label>Yes<input type="radio" name="CorrectOrder?" value="Yes"></label>
+                            <label>No<input type="radio" name="CorrectOrder?" value="No"></label>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="top-left">Was your food hot?</td>
+                    <td>
+                        <fieldset class="two">
+                            <label>Yes<input type="radio" name="HotFood?" value="Yes"></label>
+                            <label>No<input type="radio" name="HotFood?" value="No"></label> 
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rate the overall service<br>
+                        (0=poor; 10=great)</td>
+                    <td><input class="two" type="range" min="0" max="10" name="ServiceRate"></td>
+
+                </tr>  
+            </table>
+            
+                <p>Tell us more about your experience!</p>
+                <textarea rows="6" cols="10" name="comments"></textarea >
+           
+        </fieldset>
+        
+            <input type="submit" value="Submit My Survey">
+            <input type="submit" value="Cancel"> 
+        
+    </form>
+
+
+    
+</body>
+</html>
