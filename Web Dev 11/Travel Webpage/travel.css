@@ -1,0 +1,145 @@
+* {
+    box-sizing: ;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: bisque; */
+}
+
+.banner {
+    vertical-align: middle;
+    background-image: url(/images/jules-a-AJs0FFI6XTo-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-color: black;
+    width: 100%;
+    height: 150px ;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    
+    
+}
+
+.banner h1 {
+    color: white;
+    line-height:150px;
+    font-family: 'Kolker Brush', cursive;
+    font-size: 150px;
+    text-align: center;
+
+    
+    
+}
+
+
+.intro {
+    background-color: aliceblue;
+    margin: 180px 0 30px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 1.6;
+
+}
+
+.intro p {
+    font-family: 'Poor Story', cursive;
+    font-size: 30px;
+    text-align: justify;
+    
+    
+
+}
+
+.rsvp {
+    background-color: white;
+    border: dashed 2px black;
+    letter-spacing: 5px;
+    width: 1095px;
+    height: 40px;
+    padding: 10px;
+    margin: 0 auto ;
+    text-align: center;
+    
+    
+}
+
+.rsvp h2 {
+    line-height: 40px;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: black;
+}
+
+.people {
+    background-color: aliceblue;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+    
+}
+
+figure > img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 150px 150px;
+
+}
+
+figure > figcaption {
+    font-family: 'Poor Story', cursive;
+    font-size: 30px;
+    margin-top: 0;
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+.journey {
+    background-color: white;
+    border: dashed 2px black;
+    letter-spacing: 5px;
+    width: 1095px;
+    height: 40px;
+    padding: 10px;
+    margin: 30px auto 0;
+    text-align: center;
+    /* position: relative; */
+    z-index: 0;
+}
+
+.journey h2 {
+    line-height: 40px;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: black;
+}
+
+.gallery {
+    background-color: aliceblue;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+    
+}
+
+.gallery img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 50px 50px;
+}
