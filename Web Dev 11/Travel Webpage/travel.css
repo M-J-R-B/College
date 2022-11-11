@@ -1,26 +1,22 @@
 * {
-    box-sizing: ;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
-    /* background-color: bisque; */
-}
+
 
 .banner {
     vertical-align: middle;
-    background-image: url(/images/jules-a-AJs0FFI6XTo-unsplash\ \(1\).jpg);
+    background-image: url("images/road.jpg");
     background-size: cover;
     background-color: black;
     width: 100%;
     height: 150px ;
     position: fixed;
     top: 0;
-    width: 100%;
     
-    
-    
+
 }
 
 .banner h1 {
@@ -29,63 +25,37 @@ body {
     font-family: 'Kolker Brush', cursive;
     font-size: 150px;
     text-align: center;
-
-    
-    
 }
 
 
 .intro {
     background-color: aliceblue;
-    margin: 180px 0 30px;
+    margin: 30px auto 30px;
     padding: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
     line-height: 1.6;
+    max-width: 1400px;
 
-}
-
-.intro p {
     font-family: 'Poor Story', cursive;
     font-size: 30px;
     text-align: justify;
-    
-    
 
 }
 
-.rsvp {
-    background-color: white;
-    border: dashed 2px black;
-    letter-spacing: 5px;
-    width: 1095px;
-    height: 40px;
-    padding: 10px;
-    margin: 0 auto ;
-    text-align: center;
-    
-    
-}
 
-.rsvp h2 {
-    line-height: 40px;
-    font-size: 40px;
-    font-family: sans-serif;
-    color: black;
-}
-
-.people {
+.people-container {
     background-color: aliceblue;
-    padding: 20px;
+    padding: 80px;
+    margin: 0 auto;
+    max-width: 1400px;
+    
+}
+
+.people-frame {
+    justify-content: space-evenly;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 30px;
-    gap: 20px;
-    
+
 }
 
 figure > img {
@@ -105,41 +75,190 @@ figure > figcaption {
 
 }
 
-.journey {
+.journey-rectangle, .plan-rectangle, .story-rectangle, .rsvp-rectangle {
+    margin: 30px auto 30PX;
     background-color: white;
     border: dashed 2px black;
+    color: black;
     letter-spacing: 5px;
     width: 1095px;
-    height: 40px;
+    height: 60px;
     padding: 10px;
-    margin: 30px auto 0;
     text-align: center;
-    /* position: relative; */
-    z-index: 0;
+    line-height: 40px;
+    font-family: sans-serif;
+    
+
 }
 
-.journey h2 {
-    line-height: 40px;
-    font-size: 40px;
-    font-family: sans-serif;
-    color: black;
+.journey-rectangle {
+    margin: 30px auto 30px;
 }
+
+.plan-rectangle {
+    margin: 30px auto -10px;
+}
+
+.story-rectangle {
+    margin: 180px auto 30px;
+
+}
+
+.rsvp-rectangle {
+    margin: 0 auto 30px ;
+
+}
+
 
 .gallery {
     background-color: aliceblue;
-    padding: 20px;
+    padding: 20px 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 30px;
+    align-items: center;
+    margin: 0 auto;
     gap: 20px;
+    max-width: 1400px;
+    /* width: 100%; */
     
 }
 
+
 .gallery img {
     height: 350px;
+    max-width: 350px;
     width: 350px;
     object-fit: cover;
     border-radius: 50px 50px;
+    
+}
+
+.travel-info, .itinerary {
+    font-family: 'Poor Story', cursive;
+    font-size: 50px;
+    color: black;
+    /* border: 2px dotted rgb(0, 0, 0); */
+    max-width: 1400px;
+    margin: 10px auto;
+
+}
+
+
+.first-t, .second-t {
+    margin: 0 auto;
+    border-spacing: 50px 30px;
+    /* width: 100%; */
+    /* border: 2px solid rgb(0, 0, 0); */
+}
+
+td {
+    border: 2px dotted rgb(0, 0, 0);
+    
+    border-radius: 25px;
+    width: 650px;
+    padding: 10px;
+    /* margin: 0 1000px auto; */
+}
+
+.itinerary td {
+    background-color: rgb(241, 163, 60);
+    border: 2px dashed white;
+
+}
+
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: center;
+}
+
+.gallery::after {
+    content: "";
+    width: 350px;
+}
+
+.title {
+    margin: 30px auto 20px;
+    text-align: center;
+    border: 2px dashed white;
+    background-color: rgb(241, 163, 60);
+    color: white;
+    /* padding: 5px; */
+    width: 500px;
+    border-radius: 50px;
+}
+
+.second-t {
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+hr {
+    margin: 15px auto;
+    max-width: 1400px;
+    width: 90%;
+    
+    height: 3px;
+    background-color: brown;
+    outline-color:  brown;
+  
+}
+
+.wrap {
+    background: #e7e7e7;
+    padding: 0 0 20px 0;
+    text-align: center;
+    max-width: 1400px;
+    width: 90%;
+    margin: 5px auto;
+
+    font-family: 'Poor Story', cursive;
+    font-size: 18px;
+    color: #FFF8EA;
+    background-color: #FFF8EA;
+    border-radius: 20px;
+    
+
+
+}
+
+.wrap h3 {
+    
+    color: #9E7676;
+    padding: 10px 0;
+    /* margin-bottom: 10px; */
+
+}
+.safety, .reminders {
+
+    background: #9E7676;
+    display: inline-block;
+    width: 46%;
+    margin: 0 10px;
+
+    border-radius: 20px;
+}
+
+ul {
+    padding: 10px;
+    margin-left: 30px;
+    text-align: left;
+    /* padding: 20px; */
+}
+
+li {
+    padding: 5px;
 }
