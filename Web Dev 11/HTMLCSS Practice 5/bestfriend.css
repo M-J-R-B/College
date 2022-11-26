@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 40rem;
+    height: 50rem;
+
+    
+}
+.wrap {
+    position: relative;
+    width: 40rem;
+    height: 50rem;
+    /* background-color: gray; */
+    /* margin: 0 auto; */
+}
+
+.dotted-green {
+    width: 40rem;
+    height: 45rem;
+    border-style: dashed;
+    border-color: green;
+    position: relative;
+
+}
+
+.first, .second, .third, .fourth {
+    background-color: grey;
+    /* position: relative; */
+    width: 93%;
+    height: 20px;
+    color: white;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.first {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.second {
+    margin-top: 20px;
+    margin-bottom: 40px;;
+}
+
+.third, .fourth {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.blue-broken {
+    /* position:relative; */
+    border-style: dashed;
+    border-color: blue;
+    border-width: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.red-solid {
+    border-style: solid;
+    border-color: red;;
+}
+
+.orange {
+    background-color: orangered;
+    border-style: solid;
+    border-color: orangered;
+    margin: 20px;
+    padding-right: 15px;
+    padding-left: 10px;
+
+}
+
+li.light-orange {
+    background-color: orange;
+    color:blue;
+}
+
+p {
+    margin: 0;
+    text-align: center;
+}
+
+.red-solid p {
+    text-align: left;
+}
+
+.blue {
+    background-color: blue;
+    margin: 20px;
+    padding: 5px;
+}
+
+ul {
+    list-style: inside;
+    list-style-type: square;
+    margin: 10px 0 10px -30px;  
+
+    
+}
+
+.blue li {
+    background-color: lightblue;
+    margin-top: 5px;
+    padding-left: 10px;
+
+    margin-right: 10px; 
+    
+    
+}
+
+.dotted {
+    border-style: dotted solid dotted solid;
+    border-color: red green blue yellow;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.dotted p {
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
